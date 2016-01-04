@@ -3,3 +3,4 @@
 */pkg/
 *.a
 *.exe~
+src/github.com/*
