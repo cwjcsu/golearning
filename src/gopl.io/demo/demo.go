@@ -18,8 +18,11 @@ const (
 )
 
 func Lissajous(out io.Writer) {
+	LissajousWithCycles(out, 5.0)
+}
+func LissajousWithCycles(out io.Writer, cycles float64) {
 	const (
-		cycles  = 5     // number of complete x oscillator revolutions
+		// cycles: number of complete x oscillator revolutions
 		res     = 0.001 // angular resolution
 		size    = 100   // image canvas covers [-size..+size]
 		nframes = 64    // number of animation frames
